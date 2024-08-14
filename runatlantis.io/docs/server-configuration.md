@@ -471,12 +471,12 @@ and set `--autoplan-modules` to `false`.
 ### `--emoji-reaction`
 
   ```bash
-  atlantis server --emoji-reaction thumbsup
+  atlantis server --emoji-reaction +1 
   # or
-  ATLANTIS_EMOJI_REACTION=thumbsup
+  ATLANTIS_EMOJI_REACTION=+1
   ```
 
-  The emoji reaction to use for marking processed comments. Currently supported on Azure DevOps, GitHub and GitLab. If not specified, Atlantis will not use an emoji reaction.
+  The emoji reaction to use for marking processed comments. Currently supported on Azure DevOps, GitHub and GitLab. If not specified, Atlantis will not use an emoji reaction. Valid values are "+1", "-1", "laugh", "confused", "heart", "hooray", "rocket"and "eyes".
   Defaults to "" (empty string).
 
 ### `--enable-diff-markdown-format`
